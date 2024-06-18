@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise Timer</title>
+    <!-- Link to CSS for styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Exercise Timer</h1>
+    <div id="countdownDisplay" style="margin-top: 20px;"></div>
+    <button type="button" id="startExercises" disabled>Start</button>
+    <button type="button" id="restartExercises" style="display:none;">Restart</button>
+    <button type="button" id="clearExercises">Clear Exercises</button>
+    
+    <form id="exerciseForm">
+        <input type="text" id="exerciseName" placeholder="Exercise Name" required>
+        <input type="number" id="exerciseTime" placeholder="Seconds" required>
+        <button type="button" id="addExercise">Add Exercise</button>
+    </form>
+    <div id="exerciseList"></div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
